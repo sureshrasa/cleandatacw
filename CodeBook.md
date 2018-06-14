@@ -1,5 +1,5 @@
 ## Data Science Course Codebook
-Please refer to [this](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) to obtaib further details of the features and the original source of the data.
+Please refer to [this](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) to obtain further details of the features and the original source of the data.
 
 The orignal data has been processed and cleaned in the following manner:
   1. All integer activity labels have been replaced with their corresponding name equivalent
