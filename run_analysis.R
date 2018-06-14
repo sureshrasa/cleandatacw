@@ -89,5 +89,5 @@ averages_df <-
   group_by(Activity, Subject) %>%
   summarise_all(funs(mean))
 
-write.csv(df, "./data.csv", row.names = FALSE)
-write.csv(averages_df, "./averages.csv", row.names = FALSE)
+write.table(df, "./data.txt", row.names = FALSE)
+write.table(averages_df, "./averages.txt", row.names = FALSE)

@@ -2,12 +2,12 @@
 Coursework submission
 
 ### Data files
-There are two data files provided: data.csv and averages.csv
+There are two data files provided: data.txt and averages.txt
 
-#### data.csv
+#### data.txt
 This contains a merge of the clean and tidy version of the test and train datasets.
 
-#### averages.csv
+#### averages.txt
 This contains the averages grouped by the activity and volunteer(subject) for the above data set.
 
 ### R Script
@@ -17,7 +17,7 @@ The script defines helper methods to tidy and clean the data. The main code is a
 
   * The script initially invokes the method "loadData" to produce the merged view of the data sets
   * Averages are computed on the merged data set grouped by the subject and activity
-  * The data set and the computed data set are written to their respective files in CSV format
+  * The data set and the computed data set are written to their respective files
   
 #### loadData
 Loads the training and test data sets for the subject labels, X features and y labels. The columns from these data frames are combined into a single data frame and returned. It calls upon the methods loadAllYLabels, loadAllFeatures and loadAllSubjects to load the respective data frames.
@@ -37,7 +37,7 @@ Loads a single data set of y labels from a given file and replaces the label val
 #### loadAllFeatures
 Merges the training and test features and names the columns with meaningful names. Only selects mean and std columns
   1. Load all the feature names from "./features.txt" and name the columns "Index" and "Name"
-  1. Clean the feature names to be human and CSV file format friendly
+  1. Clean the feature names to be human friendly
   1. Load the test features from "./test/X_test.txt" using method loadXFeatures providing it the column names above
   1. Repeat above step for file "./train/X_train.txt" to load the training features
   1. Use rbind to merge the training and test features
